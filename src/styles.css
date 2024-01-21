@@ -1,0 +1,39 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(108, 144, 180);
+    font-family: fantasy;
+
+
+}
+
+.calculator-grid{
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+    justify-content: center;
+
+}
+
+.spanTwo{
+    grid-column: span 2;
+    
+}
+
+.output{
+    grid-column: 1 / -1;
+    background: darkslategrey;
+    display: flex;
+}
+
+output .previous-operation{
+    color: aliceblue;
+}
+
+.output .curr-operation{
+    color: beige;
+}
